@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ==========================================================================\
+|
+|   To learn how to make your own language parser, please check the following
+|   link:
+|       https://npp-user-manual.org/docs/function-list/
+|
+\=========================================================================== -->
+<NotepadPlus>
+	<functionList>
+		<parser id="my_yara" displayName="YARA" commentExpr="((/\*.*?\*)/|(//.*?$))">
+			<function mainExpr="rule\s+[\w\d_]+" displayMode="$functionName" >
+				<functionName>
+					<nameExpr expr="\s+[\w\d_]+"/>
+				</functionName>
+			</function>
+		</parser>
+	</functionList>
+</NotepadPlus>
